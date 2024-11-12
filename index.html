@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Sustainable power sources</title>
+<link rel="icon" type="image/x-icon" href="img/air.png">
+</head>
+<body>
+    <div class=header>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="tasks.html">Task</a></li>
+            <li><a href="evaluation.html">Evaluation</a></ul>
+     <audio id="myAudio" autoplay muted loop>
+        <source src="music/Haggstorm.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="muteButton">Mute Music</button>
+
+    <script>
+        const audioElement = document.getElementById('myAudio');
+        const muteButton = document.getElementById('muteButton');
+
+             function toggleMute() {
+            audioElement.muted = !audioElement.muted;
+            muteButton.textContent = audioElement.muted ? "Unmute Music" : "Mute Music";
+        }
+
+        muteButton.addEventListener('click', toggleMute);
+
+               function unmuteAudio() {
+            audioElement.muted = false;
+            audioElement.play();
+            muteButton.textContent = "Mute Music";
+        }
+
+            window.onload = function() {
+            setTimeout(unmuteAudio, 1000); 
+        };
+    </script> 
+
+    </div>
+              <div class="container">
+                  <div class=col>
+                      <div class= row>
+                        <h1>Sustainable power sources</h1>
+                      </div>
+                          <div class= row>
+                         <img src=img/e0.avif>
+                      </div>
+                    <div class= row> 
+                        <p>
+                        This web quest aims to help people to read and understand the importance of sustainable power sources and to motivate students to learn about them with they own means.
+                        </p> 
+                    </div>
+                </div>
+              </div>
+</body>
+</html>
+

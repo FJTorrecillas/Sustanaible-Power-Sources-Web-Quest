@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Sustainable power sources</title>
+    <link rel="icon" type="image/x-icon" href="img/air.png">
+</head>
+<body>
+    <div class=header>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="tasks.html">Task</a></li>
+            <li><a href="evaluation.html">Evaluation</a>
+        </ul>
+     <audio id="myAudio" autoplay muted loop>
+        <source src="music/Haggstorm.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="muteButton">Mute Music</button>
+
+    <script>
+        const audioElement = document.getElementById('myAudio');
+        const muteButton = document.getElementById('muteButton');
+
+             function toggleMute() {
+            audioElement.muted = !audioElement.muted;
+            muteButton.textContent = audioElement.muted ? "Unmute Music" : "Mute Music";
+        }
+
+        muteButton.addEventListener('click', toggleMute);
+
+               function unmuteAudio() {
+            audioElement.muted = false;
+            audioElement.play();
+            muteButton.textContent = "Mute Music";
+        }
+
+            window.onload = function() {
+            setTimeout(unmuteAudio, 1000);
+        };
+    </script>
+
+    </div>
+              <div class="container">
+                    <div class="col"> 
+                        <h1>Tasks</h1>
+                    <div class="row">
+                    <div class="row">
+                        <div class=col>
+                            <div class="row">
+                                <img src="img/solar.webp" alt="Solar power" style="width:100%">
+                            </div>
+
+                            <div class="row">
+                                <p><a href="https://wordly.org?challenge=cmFkaWF0aW9u" target="_blank"><p>How does Solar works - task 1</p></a></p> 
+                            </div>
+
+                            <div class="row">
+                                <p><a href="https://wordwall.net/es/resource/81782056" target="_blank"><p>How does Solar works - task 2</p></a></p>    
+                            </div>
+
+                        </div>
+                        <div class=col>
+                            <div class="row">
+                                <img src="img/wind.png" alt="Wind power" style="width:100%">
+                            </div>
+                            <div class="row">
+                                <p><a href="https://wordly.org/?challenge=aGVhdA" target="_blank"><p>Wind energy basics - task 1</p></a></p>
+                            </div>
+                            <div class="row">
+                                <p><a href="https://wordwall.net/resource/81780513" target="_blank"><p>Wind energy basics - task 2</p></a></p>
+                            </div>
+                        </div>
+
+                        <div class=col>
+                            <div class="row">
+                                <img src="img/hydro.png" alt="hydro power" style="width:100%">
+                            </div>
+                            <div class="row">
+                                <p><a href="https://wordly.org?challenge=Zmxvd3M" target="_blank"><p>Hydro power basics - task 1</p></a></p>
+                            </div>
+                            <div class="row">
+                                <p><a href="https://es.educaplay.com/recursos-educativos/21320311-hydropower_fundamentals.html" target="_blank"><p>Hydro power basics - task 2</p></a></p>
+                        </div>
+                        </div>
+                        <div class=col>
+                            <div class="row">
+                                <img src="img/bio.png" alt="biomass energy" style="width:100%">
+                            </div>
+                            <div class="row">
+                                <p><a href="https://wordly.org?challenge=cmVzaWR1ZXM" target="_blank"><p>Biomass resources - task 1</p></a></p>
+                            </div>
+                            <div class="row">
+                                <p><a href="https://wordwall.net/es/resource/81783662" target="_blank"><p>Biomass resources - task 2</p></a></p>
+                            </div>
+                        </div>
+                </div> 
+             </div>
+</body>
+</html>
